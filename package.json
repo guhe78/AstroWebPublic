@@ -1,0 +1,31 @@
+{
+   "name": "webseite",
+   "type": "module",
+   "version": "0.0.1",
+   "scripts": {
+      "dev": "astro dev --host",
+      "start": "astro dev",
+      "build": "astro check && astro build",
+      "preview": "astro preview",
+      "astro": "astro"
+   },
+   "dependencies": {
+      "@astrojs/check": "^0.9.3",
+      "@astrojs/react": "^3.6.2",
+      "@astrojs/tailwind": "^5.1.2",
+      "@astrojs/ts-plugin": "^1.10.2",
+      "@swup/a11y-plugin": "^5.0.0",
+      "@swup/astro": "^1.5.0",
+      "@swup/head-plugin": "^2.3.1",
+      "@swup/scroll-plugin": "^3.3.2",
+      "astro": "^4.16.12",
+      "swup": "^4.8.1",
+      "typescript": "^5.6.2",
+      "webseite": "file:",
+      "webseite_die_zweite": "file:"
+   },
+   "devDependencies": {
+      "@iconify-json/mdi": "^1.2.1",
+      "astro-icon": "^1.1.1"
+   }
+}

@@ -1,0 +1,14 @@
+[
+   {
+      "language": "Python",
+      "name": "Taschenrechner",
+      "url": "https://github.com",
+      "description": "Ein einfacher Taschenrechner. Im Rahmen meiner Ausbildung geschrieben."
+   },
+   {
+      "language": "Astro",
+      "name": "Diese Webseite",
+      "url": "https://github.com",
+      "description": "Diese Seite mit Astro."
+   }
+]

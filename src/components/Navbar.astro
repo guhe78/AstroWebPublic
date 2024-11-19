@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon/components';
+import Navlink from './Navlink.astro';
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.split('/');
+---
+
+<nav class="navbar-container">
+   <ul class="navbar-left">
+      <li>
+         <Navlink title="Home" url="" currentpath={currentPath[1]} />
+      </li>
+      <li>
+         <Navlink title="ÜberMich" url="about" currentpath={currentPath[1]} />
+      </li>
+      <li>
+         <Navlink
+            title="Projekte"
+            url="projects"
+            currentpath={currentPath[1]}
+         />
+      </li>
+      <li>
+         <Navlink title="Links" url="links" currentpath={currentPath[1]} />
+      </li>
+   </ul>
+   <ul class="navbar-right">
+      <li>
+         <a href="https://github.com" target="_blank"
+            ><Icon name="mdi:github" /></a
+         >
+      </li>
+      <li>
+         <a href="mailto:admin@test.com"><Icon name="mdi:email" /></a>
+      </li>
+   </ul>
+</nav>

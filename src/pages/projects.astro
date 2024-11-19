@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import projects from '../../public/projects.json';
+---
+
+<Layout>
+   <div class="projects-container" id="projects">
+      <h1>Projekte</h1>
+      <h4>Hier sind Links zu meinen Projekten auf GitHub.</h4>
+      <br />
+      <div class="projects">
+         {
+            projects.map((project) => (
+               <div class="project">
+                  <a href={project.url} target="_blank">
+                     <h5>{project.language}</h5>
+                     <h3>{project.name}</h3>
+                     <p>{project.description}</p>
+                  </a>
+               </div>
+            ))
+         }
+      </div>
+   </div>
+</Layout>

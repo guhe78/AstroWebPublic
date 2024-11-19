@@ -1,0 +1,13 @@
+---
+const { title, url, currentpath } = Astro.props;
+---
+
+<a href={'/' + url} class="navlink">
+   {
+      currentpath === url ? (
+         <span class="navlink-active">{title}</span>
+      ) : (
+         <span class="navlink-inactive">{title}</span>
+      )
+   }
+</a>
